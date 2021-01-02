@@ -3,9 +3,9 @@ from user import User
 
 user = User("Gage")
 
-my_movie = Movie("The Matrix", "Sci-Fi")
+my_movie = Movie("The Matrix", "Sci-Fi", True)
 
 user.movies.append(my_movie)
 
 print(user)
-print(user.movies)
+print(user.watched_movies())
