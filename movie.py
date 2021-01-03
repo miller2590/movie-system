@@ -6,4 +6,3 @@ class Movie:
 
     def __repr__(self):
         return f'Movie: {self.name}'
-

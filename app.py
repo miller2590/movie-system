@@ -1,8 +1,6 @@
 from user import User
 
-user = User("Gage")
+user = User.load_from_file("Gage.txt")
 
-user.add_movie('Die Hard', 'Action')
-user.add_movie('The Interview', 'Comedy')
+print(user.movies)
 
-user.save_to_file()
