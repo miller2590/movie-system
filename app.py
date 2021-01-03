@@ -1,6 +1,7 @@
 from user import User
+import json
 
-user = User.load_from_file("Gage.txt")
-
-print(user.movies)
-
+with open('my file.txt', 'r') as f:
+    json_data = json.load(f)
+    user = User.from_json(json_data)
+    print(user.json())
